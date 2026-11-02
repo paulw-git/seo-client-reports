@@ -253,7 +253,6 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
     <a onclick="showPage('gscai')" data-tooltip="Google AI Search Impressions" data-page="gscai"><svg class="icon"><use href="#bi-graph-up"/></svg> <span class="nav-label">Google AI Search Impressions</span></a>
     <a onclick="showPage('keywords')" data-tooltip="Google Keyword Rankings" data-page="keywords"><svg class="icon"><use href="#bi-trophy"/></svg> <span class="nav-label">Google Keyword Rankings</span></a>
     <a onclick="showPage('gsc')" data-tooltip="Google Search Console Data" data-page="gsc"><svg class="icon"><use href="#bi-search"/></svg> <span class="nav-label">Google Search Console Data</span></a>
-    <a onclick="showPage('gbp')" data-tooltip="Google Business Profile Metrics" data-page="gbp"><svg class="icon"><use href="#bi-geo-alt"/></svg> <span class="nav-label">Google Business Profile Metrics</span></a>
     <a onclick="showPage('topurls')" data-tooltip="Top Performing Website Pages" data-page="topurls"><svg class="icon"><use href="#bi-link-45deg"/></svg> <span class="nav-label">Top Performing Website Pages</span></a>
     <a onclick="showPage('seocampaign')" data-tooltip="Pages Made for the SEO Campaign" data-page="seocampaign"><svg class="icon"><use href="#bi-rocket"/></svg> <span class="nav-label">Pages Made for the SEO Campaign</span></a>
     <div class="nav-divider" aria-hidden="true"></div>
@@ -394,43 +393,6 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
   <!-- ══════════════════════════════════════════════════════════════════ -->
   <!-- PAGE: KEYWORDS                                                     -->
   <!-- ══════════════════════════════════════════════════════════════════ -->
-  <div class="page" id="page-gbp">
-    <div class="filter-bar" id="gbp-filterbar">
-      <span class="filter-label"><svg class="icon" style="margin-right:5px;"><use href="#bi-calendar3"/></svg>Month</span>
-    </div>
-    <div class="section">
-      <div class="section-title"><svg class="icon"><use href="#bi-geo-alt"/></svg> Google Business Profile Metrics</div>
-      <p class="section-subtitle">Profile views, search appearances, and customer actions per month.</p>
-      <div class="kpi-grid" id="gbp-kpi"></div>
-      <div class="chart-card">
-        <div class="chart-card-title">Profile Views &amp; Interactions</div>
-        <div class="chart-card-sub">Monthly views vs. total interactions with your listing</div>
-        <canvas id="gbpViewsChart"></canvas>
-      </div>
-      <div class="chart-card">
-        <div class="chart-card-title">Calls, Directions &amp; Website Clicks</div>
-        <div class="chart-card-sub">Customer actions taken directly from your Business Profile</div>
-        <canvas id="gbpActionsChart"></canvas>
-      </div>
-      <div class="scroll-x" style="margin-top:10px;">
-        <table class="tbl" id="gbp-table">
-          <thead>
-            <tr>
-              <th>Month</th>
-              <th class="num">Views</th>
-              <th class="num">Search Results</th>
-              <th class="num">Interactions</th>
-              <th class="num">Calls</th>
-              <th class="num">Directions</th>
-              <th class="num">Website Clicks</th>
-            </tr>
-          </thead>
-          <tbody id="gbp-table-body"></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
   <div class="page" id="page-keywords">
     <div class="section">
       <div class="section-title"><svg class="icon"><use href="#bi-trophy"/></svg> Google Keyword Rankings</div>
