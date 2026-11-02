@@ -282,17 +282,19 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
     </div>
   </div>
 
-  <!-- ════ PAGE: CAMPAIGN NOTES ════ -->
+  <!-- ════ PAGE: CALL & EMAIL NOTES ════ -->
   <div class="page" id="page-notes">
-    <div class="section">
+    <div class="section notes-section">
       <div class="section-title"><svg class="icon"><use href="#bi-clock"/></svg> Call &amp; Email Notes</div>
-      <p class="section-subtitle">Important campaign observations, decisions, reminders, and planning notes.</p>
+      <p class="section-subtitle">Organized campaign observations, decisions, follow-ups, and planning notes from client communications.</p>
+      <div class="notes-grid"><article class="note-card note-card-current"><div class="note-card-head"><span class="note-date">October 2026</span><span class="note-tag">Current priorities</span></div><h3>Content and structured data</h3><ul><li>Two new pieces of content were in progress.</li><li>Structured data changes were being planned for local search and AI-oriented visibility.</li><li>No other major campaign changes were recorded before the early-November update.</li></ul></article>
+<article class="note-card"><div class="note-card-head"><span class="note-date">September 2026</span><span class="note-tag">Reporting and rankings</span></div><h3>Strong organic visibility</h3><ul><li>Organic search grew from 199 users and 263 sessions at the beginning of the campaign to 774 users and 1,040 sessions in September.</li><li>September produced 123,984 Search Console impressions, compared with 20,289 at the beginning of the campaign.</li><li>Average Search Console position improved from 29.2 initially to 8.8 in September.</li><li>Forty-six tracked keywords ranked in the top 30 and 42 ranked in the top 10 in September.</li><li>Two seasonal-affective-disorder posts were written and posted.</li></ul></article>
+<article class="note-card"><div class="note-card-head"><span class="note-date">August 2026</span><span class="note-tag">Content expansion</span></div><h3>New topics and site structure</h3><ul><li>Two new pages were created around wildfires, air quality, and mental health.</li><li>A structured-data audit was planned to strengthen local search and AI visibility.</li><li>Future content ideas included seasonal mental-health topics, postpartum depression, bipolar keywords, and educational resources.</li><li>Organic traffic was identified as the dominant traffic driver and had continued to grow.</li></ul></article>
+<article class="note-card"><div class="note-card-head"><span class="note-date">May–July 2026</span><span class="note-tag">Campaign development</span></div><h3>Content, profiles, and growth</h3><ul><li>FAQ content was introduced to broaden the campaign beyond blog posts and support structured question-and-answer visibility.</li><li>Provider profile content and local citation work were being improved.</li><li>Conversion-focused content ideas included quizzes, education resources, and a research section.</li><li>The practice was preparing for expanded clinical research and a future space transition.</li></ul></article></div>
+      <div class="notes-followup"><div class="notes-followup-title">Ongoing follow-up themes</div><div class="notes-followup-grid"><div><strong>Content</strong><span>Continue useful mental-health content and FAQ development.</span></div><div><strong>Structured data</strong><span>Implement local and AI-oriented markup improvements.</span></div><div><strong>Visibility</strong><span>Monitor rankings, organic traffic, GBP activity, and citations.</span></div><div><strong>Conversion</strong><span>Develop educational resources that support patient actions.</span></div></div></div>
     </div>
   </div>
 
-
-
-  <!-- ══════════════════════════════════════════════════════════════════ -->
   <!-- PAGE: SEARCH CONSOLE                                               -->
   <!-- ══════════════════════════════════════════════════════════════════ -->
   <div class="page" id="page-gsc">
@@ -603,7 +605,26 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
       .key-term { color:var(--ink); font-size:.9rem; font-weight:700; margin:0 0 4px; }
       .key-definition { color:var(--ink); font-size:.84rem; font-weight:400; line-height:1.55; margin:0; }
       @media(max-width:700px) { .key-grid { grid-template-columns:1fr; } }
-    </style>
+    
+/* Call & Email Notes */
+.notes-section{width:50%;max-width:50%;min-width:0}
+.notes-grid{display:flex;flex-direction:column;gap:18px}
+.note-card{background:#fff;border:1px solid #E4E0D8;border-radius:12px;padding:20px 22px;box-shadow:0 3px 10px rgba(39,35,31,.06)}
+.note-card-current{border-top:4px solid #E8622D}
+.note-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.note-date{font-size:16px;font-weight:750;color:#282521}
+.note-tag{font-size:12px;font-weight:600;color:#5C554D;background:#F2EEE8;border-radius:999px;padding:5px 9px;white-space:nowrap}
+.note-card h3{margin:0 0 10px;font-size:18px;line-height:1.25;color:#282521;font-weight:700}
+.note-card ul{margin:0;padding-left:20px;color:#4A443D;font-size:14px;line-height:1.55}
+.note-card li+li{margin-top:7px}
+.notes-followup{margin-top:22px;background:#F7F5F1;border:1px solid #E4E0D8;border-radius:12px;padding:20px 22px}
+.notes-followup-title{font-weight:750;font-size:17px;color:#282521;margin-bottom:14px}
+.notes-followup-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.notes-followup-grid div{display:flex;flex-direction:column;gap:5px;color:#4A443D;font-size:13px;line-height:1.4}
+.notes-followup-grid strong{color:#282521;font-size:14px}
+@media(max-width:900px){.notes-section{width:100%;max-width:100%}.notes-followup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.notes-followup-grid{grid-template-columns:1fr}.note-card-head{align-items:flex-start;flex-direction:column;gap:6px}}
+</style>
     <div class="section">
       <div class="section-title"><svg class="icon"><use href="#bi-eye"/></svg> Report Definitions</div>
       <p class="key-intro">Plain-language definitions for the metrics, concepts, labels, and controls used throughout this SEO campaign report.</p>

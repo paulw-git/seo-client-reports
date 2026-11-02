@@ -282,17 +282,19 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
     </div>
   </div>
 
-  <!-- ════ PAGE: CAMPAIGN NOTES ════ -->
+  <!-- ════ PAGE: CALL & EMAIL NOTES ════ -->
   <div class="page" id="page-notes">
-    <div class="section">
+    <div class="section notes-section">
       <div class="section-title"><svg class="icon"><use href="#bi-clock"/></svg> Call &amp; Email Notes</div>
-      <p class="section-subtitle">Important campaign observations, decisions, reminders, and planning notes.</p>
+      <p class="section-subtitle">Organized campaign observations, decisions, follow-ups, and planning notes from client communications.</p>
+      <div class="notes-grid"><article class="note-card note-card-current"><div class="note-card-head"><span class="note-date">October 2026</span><span class="note-tag">Paid search insights</span></div><h3>Search demand and campaign signals</h3><ul><li>Matteson paid search recorded 105 clicks, $279.52 in spend, and 33 calls from October 1–28.</li><li>Matteson searches centered on the practice name, orthodontist services, nearby searches, consultation pricing, Medicaid-related terms, and reviews.</li><li>Palos paid search recorded 46 clicks, $167.33 in spend, and 12 calls during the same period.</li><li>Palos searches included practice-name terms, Invisalign and braces pricing, Oak Lawn, ceramic braces, retainer replacement, and reviews.</li></ul></article>
+<article class="note-card"><div class="note-card-head"><span class="note-date">October 2026</span><span class="note-tag">Website strategy</span></div><h3>Content and local relevance opportunities</h3><ul><li>Pricing questions appeared for both practices, supporting the need for clear pricing-related information.</li><li>Review searches appeared for both practices, supporting a visible reviews section or page.</li><li>Oak Lawn appeared in Palos search activity and may be relevant to local service-area messaging.</li><li>Medicaid-related searches appeared for Matteson and should be addressed accurately on the site and in advertising.</li></ul></article>
+<article class="note-card"><div class="note-card-head"><span class="note-date">September–October 2026</span><span class="note-tag">Tracking and access</span></div><h3>Measurement and account setup</h3><ul><li>GA4, Google Search Console, and Google Business Profile access were being organized for both locations.</li><li>The Palos advertising account had a Business Profile connection problem that needed to be corrected before location assets could be configured reliably.</li><li>Conversion tracking priorities included click-to-call, form submissions, and appointment requests.</li><li>The campaign scope currently excludes the Orland Park practice.</li></ul></article>
+<article class="note-card"><div class="note-card-head"><span class="note-date">Campaign kickoff</span><span class="note-tag">Platform planning</span></div><h3>Website and SEO foundation</h3><ul><li>The existing Sesame platform was identified as a limitation for SEO and content management.</li><li>A future WordPress rebuild was being considered to provide more control over content, templates, and technical SEO.</li><li>The campaign was planned in stages: SEO foundations, paid advertising, and future AI-oriented visibility work.</li></ul></article></div>
+      <div class="notes-followup"><div class="notes-followup-title">Ongoing follow-up themes</div><div class="notes-followup-grid"><div><strong>Measurement</strong><span>Complete GA4, GSC, GBP, and conversion tracking setup.</span></div><div><strong>Local visibility</strong><span>Resolve profile ownership and location-asset issues.</span></div><div><strong>Content</strong><span>Build accurate pricing, review, and service-area information.</span></div><div><strong>Platform</strong><span>Evaluate a more flexible website platform for future growth.</span></div></div></div>
     </div>
   </div>
 
-
-
-  <!-- ══════════════════════════════════════════════════════════════════ -->
   <!-- PAGE: SEARCH CONSOLE                                               -->
   <!-- ══════════════════════════════════════════════════════════════════ -->
   <div class="page" id="page-gsc">
@@ -603,7 +605,26 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
       .key-term { color:var(--ink); font-size:.9rem; font-weight:700; margin:0 0 4px; }
       .key-definition { color:var(--ink); font-size:.84rem; font-weight:400; line-height:1.55; margin:0; }
       @media(max-width:700px) { .key-grid { grid-template-columns:1fr; } }
-    </style>
+    
+/* Call & Email Notes */
+.notes-section{width:50%;max-width:50%;min-width:0}
+.notes-grid{display:flex;flex-direction:column;gap:18px}
+.note-card{background:#fff;border:1px solid #E4E0D8;border-radius:12px;padding:20px 22px;box-shadow:0 3px 10px rgba(39,35,31,.06)}
+.note-card-current{border-top:4px solid #E8622D}
+.note-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.note-date{font-size:16px;font-weight:750;color:#282521}
+.note-tag{font-size:12px;font-weight:600;color:#5C554D;background:#F2EEE8;border-radius:999px;padding:5px 9px;white-space:nowrap}
+.note-card h3{margin:0 0 10px;font-size:18px;line-height:1.25;color:#282521;font-weight:700}
+.note-card ul{margin:0;padding-left:20px;color:#4A443D;font-size:14px;line-height:1.55}
+.note-card li+li{margin-top:7px}
+.notes-followup{margin-top:22px;background:#F7F5F1;border:1px solid #E4E0D8;border-radius:12px;padding:20px 22px}
+.notes-followup-title{font-weight:750;font-size:17px;color:#282521;margin-bottom:14px}
+.notes-followup-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.notes-followup-grid div{display:flex;flex-direction:column;gap:5px;color:#4A443D;font-size:13px;line-height:1.4}
+.notes-followup-grid strong{color:#282521;font-size:14px}
+@media(max-width:900px){.notes-section{width:100%;max-width:100%}.notes-followup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.notes-followup-grid{grid-template-columns:1fr}.note-card-head{align-items:flex-start;flex-direction:column;gap:6px}}
+</style>
     <div class="section">
       <div class="section-title"><svg class="icon"><use href="#bi-eye"/></svg> Report Definitions</div>
       <p class="key-intro">Plain-language definitions for the metrics, concepts, labels, and controls used throughout this SEO campaign report.</p>
