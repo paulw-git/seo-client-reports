@@ -639,7 +639,8 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
       @media(max-width:700px) { .key-grid { grid-template-columns:1fr; } }
     
 /* Call & Email Notes */
-.notes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.notes-section{width:50%;max-width:50%;min-width:0}
+.notes-grid{display:flex;flex-direction:column;gap:18px}
 .note-card{background:#fff;border:1px solid #E4E0D8;border-radius:12px;padding:20px 22px;box-shadow:0 3px 10px rgba(39,35,31,.06)}
 .note-card-current{border-top:4px solid #E8622D}
 .note-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
@@ -653,7 +654,7 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
 .notes-followup-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .notes-followup-grid div{display:flex;flex-direction:column;gap:5px;color:#4A443D;font-size:13px;line-height:1.4}
 .notes-followup-grid strong{color:#282521;font-size:14px}
-@media(max-width:900px){.notes-grid{grid-template-columns:1fr}.notes-followup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.notes-section{width:100%;max-width:100%}.notes-followup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.notes-followup-grid{grid-template-columns:1fr}.note-card-head{align-items:flex-start;flex-direction:column;gap:6px}}
 </style>
     <div class="section">
