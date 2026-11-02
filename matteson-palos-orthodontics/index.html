@@ -140,8 +140,6 @@ body::-webkit-scrollbar-thumb,#sidebar::-webkit-scrollbar-thumb{background:var(-
 .chart-card{background:var(--surface);border-radius:10px;border:1px solid var(--line);padding:17px 20px 13px;margin:14px 0;}
 .chart-card-title{font-family:var(--font-display);font-size:1.0825rem;font-weight:600;color:var(--ink);margin-bottom:2px;}
 .chart-card-sub{font-size:.8025rem;color:var(--ink);margin-bottom:13px;}
-.gbp-chart-card canvas{display:block;width:100% !important;height:300px !important;}
-@media(max-width:700px){.gbp-chart-card canvas{height:240px !important;}}
 
 /* ── Table ── */
 .scroll-x{overflow-x:auto;}
@@ -417,12 +415,12 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
       <div class="section-title"><svg class="icon"><use href="#bi-geo-alt"/></svg> Google Business Profile Metrics</div>
       <p class="section-subtitle">Profile views, search appearances, and customer actions for the latest 90-day reporting period at each location.</p>
       <div class="kpi-grid" id="gbp-kpi"></div>
-      <div class="chart-card gbp-chart-card">
+      <div class="chart-card">
         <div class="chart-card-title">Profile Views &amp; Interactions</div>
         <div class="chart-card-sub">90-day views vs. total interactions for each location</div>
         <canvas id="gbpViewsChart"></canvas>
       </div>
-      <div class="chart-card gbp-chart-card">
+      <div class="chart-card">
         <div class="chart-card-title">Calls, Directions &amp; Website Clicks</div>
         <div class="chart-card-sub">Customer actions taken directly from each Business Profile during the reporting period</div>
         <canvas id="gbpActionsChart"></canvas>
