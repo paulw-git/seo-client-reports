@@ -604,7 +604,8 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
       .timeline-task-meta { display:flex; align-items:center; gap:9px; justify-content:flex-start; white-space:nowrap; }
       .timeline-status { border-radius:99px; padding:4px 8px; font-size:.7125rem; font-weight:750; }
       .timeline-status.complete { color:#2f6b3d; background:#e4f3e7; border:1px solid #b9dfc1; }
-      .timeline-status.in-process { color:var(--amber-dim); background:var(--amber-tint); }
+      .timeline-status.in-process { color:#856404; background:#fff3cd; border:1px solid #f0d98a; }
+      .timeline-status.not-started { color:#5f6368; background:#f1f3f4; border:1px solid #d9dde1; }
       .timeline-date { color:var(--muted); font-size:.7425rem; }
       @media(max-width:1100px) { .deliverable-library { grid-template-columns:repeat(4,minmax(0,1fr)); } }
       @media(max-width:900px) { .timeline-summary { grid-template-columns:repeat(2,minmax(0,1fr)); } .deliverable-library { grid-template-columns:repeat(2,minmax(0,1fr)); } }
@@ -1564,7 +1565,7 @@ function renderProjectTimeline() {
   const library = document.getElementById('timeline-deliverables');
   if (library && !library.children.length) library.innerHTML = (timeline.deliverables || []).map(d => '<a class="deliverable-card" href="'+d.url+'" target="_blank" rel="noopener"><svg class="deliverable-external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7"/></svg><span>'+d.label+'</span></a>').join('');
   const months = document.getElementById('timeline-months');
-  if (months && !months.children.length) months.innerHTML = (timeline.months || []).map(m => '<div class="timeline-month"><div class="timeline-month-head"><h3>'+m.month+'</h3><span class="timeline-month-count">'+m.tasks.length+' Item'+(m.tasks.length === 1 ? '' : 's')+'</span></div><div class="timeline-tasks">'+m.tasks.map(t => '<div class="timeline-task"><div class="timeline-task-meta"><span class="timeline-status '+(t.status === 'Complete' ? 'complete' : 'in-process')+'">'+t.status+'</span>'+'</div><div><div class="timeline-task-title">'+t.title+'</div>'+(t.note ? '<div class="timeline-task-note">'+t.note.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')+'</div>' : '')+'</div></div>').join('')+'</div></div>').join('');
+  if (months && !months.children.length) months.innerHTML = (timeline.months || []).map(m => '<div class="timeline-month"><div class="timeline-month-head"><h3>'+m.month+'</h3><span class="timeline-month-count">'+m.tasks.length+' Item'+(m.tasks.length === 1 ? '' : 's')+'</span></div><div class="timeline-tasks">'+m.tasks.map(t => '<div class="timeline-task"><div class="timeline-task-meta"><span class="timeline-status '+(t.status === 'Complete' ? 'complete' : (t.status === 'In Process' ? 'in-process' : 'not-started'))+'">'+t.status+'</span>'+'</div><div><div class="timeline-task-title">'+t.title+'</div>'+(t.note ? '<div class="timeline-task-note">'+t.note.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')+'</div>' : '')+'</div></div>').join('')+'</div></div>').join('');
 }
 
 // ═══════════════════════════════════════════════════════════════════════
