@@ -838,6 +838,7 @@ const state = { ov:null, gsc:null, gbp:null, ga:null, kw:null, topurls:null, seo
 // ═══════════════════════════════════════════════════════════════════════
 function buildFilterBar(prefix, months) {
   const bar = document.getElementById(`${prefix}-filterbar`);
+  if (!bar) return;
   // All button
   const allBtn = document.createElement('button');
   allBtn.className = 'month-btn all-btn active';
