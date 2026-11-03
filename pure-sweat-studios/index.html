@@ -285,7 +285,13 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
   <div class="page" id="page-notes">
     <div class="section notes-section">
       <div class="section-title"><svg class="icon"><use href="#bi-clock"/></svg> Call &amp; Email Notes</div>
-      <div class="notes-grid">
+      <div class="action-items"><div class="action-items-title">Action Items</div><div class="action-items-grid"><div class="action-item"><strong>For Paul</strong><ul><li>Update the pre-opening location pages and remove the duplicate Explore Founding Memberships button from Leewood, Austin, and Strongsville.</li><li>Send Candice and Kaylee a note listing the page changes.</li><li>QA the WordPress development site, confirm the Axel widgets and location links, and prepare for the Wednesday evening, November 11 launch.</li><li>Send the month-end email update before the Thursday, November 5 franchise advisory call and send Candice the SEO report link.</li></ul></div><div class="action-item"><strong>For Candice</strong><ul><li>Update the November gift-card specials on the location pages.</li><li>Confirm launch coordination with Kaylee and keep the team available for post-launch checks.</li><li>Share the SEO report with Jason or FSH for guidance on what to share with the franchise network.</li><li>Help determine whether the franchise network should receive the full report or a curated quarterly summary.</li></ul></div></div></div>      <div class="notes-grid">
+        <article class="note-card note-card-current">
+          <div class="note-card-head"><span class="note-date">November 3, 2026</span><span class="note-tag">Wispr call · Candice &amp; Paul</span></div>
+          <h3>WordPress launch, location-page QA, and reporting plans</h3>
+          <ul><li><strong>Candice:</strong><br>Shared that the Axel rollout had experienced bumps and that franchisees were concerned about correct links on their location pages. She identified a widget showing only infrared sauna where three modalities should appear, and requested removal of the duplicate Explore Founding Memberships button from the pre-opening Leewood, Austin, and Strongsville pages.<br><br><strong>Paul:</strong><br>Confirmed that the WordPress site was running on a hidden development URL, with Squarespace remaining available as a fallback. He planned to update the location pages, QA the site and Axel widgets, and prepare for a Wednesday evening, November 11 DNS launch pending successful testing.<br><br><strong>Candice:</strong><br>Agreed to update the November gift-card specials, coordinate with Kaylee, and keep the team available to check the site after launch. She also wanted to use the SEO report to help decide what information should be shared with the franchise network.<br><br><strong>Candice and Paul:</strong><br>Discussed sharing SEO statistics quarterly, beginning with a December year-end update and continuing in March. Recent email engagement suggested strong interest in weight loss, glowing skin, and nervous-system-regulation topics, which may inform future content and marketing.</li></ul>
+        </article>
+
         <article class="note-card note-card-current">
           <div class="note-card-head"><span class="note-date">November 2026</span><span class="note-tag">Current priorities</span></div>
           <h3>Website transition and holiday planning</h3>
@@ -623,6 +629,14 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
 @media(max-width:900px){.notes-section{width:100%;max-width:100%}.notes-followup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.notes-followup-grid{grid-template-columns:1fr}.note-card-head{align-items:flex-start;flex-direction:column;gap:6px}}
 .notes-section>.section-title{margin-bottom:28px}
+.action-items{margin:0 0 30px;background:#FFF8E1;border:1px solid #E6C76A;border-left:5px solid #D99A00;border-radius:3px;padding:20px 22px}
+.action-items-title{font-weight:700;font-size:20px;color:#202124;margin-bottom:14px}
+.action-items-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 26px}
+.action-item{color:#3C4043;font-size:17px;line-height:1.55}
+.action-item strong{display:block;color:#202124;font-size:17px;margin-bottom:5px}
+.action-item ul{margin:0;padding-left:22px}
+.action-item li+li{margin-top:6px}
+@media(max-width:560px){.action-items-grid{grid-template-columns:1fr}}
 </style>
     <div class="section">
       <div class="section-title"><svg class="icon"><use href="#bi-eye"/></svg> Report Definitions</div>
