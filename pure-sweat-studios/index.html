@@ -210,12 +210,6 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
   #sidebar.collapsed{transform:none;width:58px;}
 }
 </style>
-<style>
-/* Scrollable monthly charts: preserve every month label at readable width. */
-.chart-scroll{width:100%;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-.chart-scroll-inner{position:relative;min-width:1100px;height:360px}
-.chart-scroll-inner canvas{display:block!important;width:100%!important;height:100%!important}
-</style>
 </head>
 <body>
 <svg style="display:none" aria-hidden="true">
@@ -356,7 +350,7 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
                 <div class="chart-card">
             <div class="chart-card-title">Monthly Impressions &amp; Average Position</div>
             <div class="chart-card-sub">Impressions (bars, left axis) and average position (line, right axis — lower = better)</div>
-            <div class="chart-scroll"><div class="chart-scroll-inner"><canvas id="gscImpPosChart" height="70"></canvas></div></div>
+            <canvas id="gscImpPosChart" height="70"></canvas>
           </div>
       <!-- Top 50 Queries table -->
                 <div class="chart-card">
@@ -409,13 +403,13 @@ body.sidebar-collapsed #main{margin-left:var(--sidebar-collapsed-w);}
                 <div class="chart-card">
             <div class="chart-card-title">Total Users vs. Organic Users</div>
             <div class="chart-card-sub">Monthly comparison — all traffic sources vs. organic search only</div>
-            <div class="chart-scroll"><div class="chart-scroll-inner"><canvas id="gaUsersChart" height="70"></canvas></div></div>
+            <canvas id="gaUsersChart" height="70"></canvas>
           </div>
       <!-- Sessions chart -->
                 <div class="chart-card">
             <div class="chart-card-title">Total Sessions vs. Organic Sessions</div>
             <div class="chart-card-sub">Monthly comparison — all sessions vs. organic search sessions</div>
-            <div class="chart-scroll"><div class="chart-scroll-inner"><canvas id="gaSessionsChart" height="70"></canvas></div></div>
+            <canvas id="gaSessionsChart" height="70"></canvas>
           </div>
       <!-- Summary table -->
                 <div class="chart-card">
@@ -972,7 +966,6 @@ function renderGSC() {
   setKpi('gsc-pos',  filtered.length ? '#'+avgPos : '—', label);
 
   // Impressions bar + position line (dual axis)
-  setMonthlyChartWidth('gscImpPosChart', labels.length);
   makeOrUpdate('gscImpPosChart',{type:'bar',data:{labels,datasets:[
     {label:'Impressions', data:allData.map(r=>r.impressions),
      backgroundColor:allData.map(r=>(!sel||r.month===sel)?P.blue+'99':P.blue+'22'),
@@ -1134,12 +1127,6 @@ function renderGBP() {
   }
 }
 
-function setMonthlyChartWidth(id, count) {
-  const canvas = document.getElementById(id);
-  const inner = canvas && canvas.parentElement;
-  if (inner) inner.style.minWidth = Math.max(1100, count * 78) + 'px';
-}
-
 function renderGA() {
   const grid = document.getElementById('ga-kpi');
   if (!grid.children.length) grid.innerHTML = [
@@ -1171,8 +1158,6 @@ function renderGA() {
   }
 
   // Users chart
-  setMonthlyChartWidth('gaUsersChart', labels.length);
-  setMonthlyChartWidth('gaSessionsChart', labels.length);
   makeOrUpdate('gaUsersChart',{type:'bar',data:{labels,datasets:[
     {label:'Total Users',   data:allData.map(r=>r.users),
      backgroundColor:barColors(P.blue,'99'), borderColor:allData.map(r=>(!sel||r.month===sel)?P.blue:P.blue+'55'), borderWidth:1, borderRadius:4},
