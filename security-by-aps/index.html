@@ -1035,7 +1035,7 @@ function renderGSC() {
      borderDash:[]},
   ]},options:{responsive:true,interaction:{mode:'index',intersect:false},
     plugins:{tooltip:TT(),legend:{position:'top'}},
-    scales:{x:{grid:{display:false}},
+    scales:{x:monthEndpointAxis(labels),
       y1:{position:'left', title:{display:true,text:'Impressions'}, grid:{color:'rgba(34,29,23,.07)'}, beginAtZero:true},
       y2:{position:'right',title:{display:true,text:'Avg Position (lower = better)'},
           reverse:true, grid:{display:false}}}}});
@@ -1183,6 +1183,11 @@ function renderGBP() {
   }
 }
 
+function monthEndpointAxis(labels) {
+  return {grid:{display:false},ticks:{autoSkip:false,callback:(value,index)=>
+    (index===0 || index===labels.length-1) ? labels[index] : ''}};
+}
+
 function renderGA() {
   const grid = document.getElementById('ga-kpi');
   if (!grid.children.length) grid.innerHTML = [
@@ -1221,7 +1226,7 @@ function renderGA() {
      backgroundColor:barColors(P.green,'cc'), borderColor:allData.map(r=>(!sel||r.month===sel)?P.green:P.green+'55'), borderWidth:1, borderRadius:4},
   ]},options:{responsive:true,interaction:{mode:'index',intersect:false},
     plugins:{tooltip:TT(),legend:{position:'top'}},
-    scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(34,29,23,.07)'},beginAtZero:true}}}});
+    scales:{x:monthEndpointAxis(labels),y:{grid:{color:'rgba(34,29,23,.07)'},beginAtZero:true}}}});
 
   // Sessions chart
   makeOrUpdate('gaSessionsChart',{type:'bar',data:{labels,datasets:[
@@ -1231,7 +1236,7 @@ function renderGA() {
      backgroundColor:barColors(P.purple,'cc'), borderColor:allData.map(r=>(!sel||r.month===sel)?P.purple:P.purple+'55'), borderWidth:1, borderRadius:4},
   ]},options:{responsive:true,interaction:{mode:'index',intersect:false},
     plugins:{tooltip:TT(),legend:{position:'top'}},
-    scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(34,29,23,.07)'},beginAtZero:true}}}});
+    scales:{x:monthEndpointAxis(labels),y:{grid:{color:'rgba(34,29,23,.07)'},beginAtZero:true}}}});
 
   // Summary table — highlight selected row
   const tbody = document.getElementById('ga-table-body');
