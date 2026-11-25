@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Self-Storage Facility Security Systems | Security by APS</title>
+  <meta name="description" content="See how Security by APS used off-grid ProVisual monitoring to help protect regional self-storage facilities, gates, loading zones, and perimeter fencing.">
+  <link rel="canonical" href="https://paulw-git.github.io/seo-client-reports/security-by-aps-self-storage-case-study/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #071d32;
+      --blue: #0b5d91;
+      --sky: #2aa7d6;
+      --aqua: #a9e6e7;
+      --lime: #d5ed5d;
+      --cream: #f5f8f7;
+      --ink: #1e2f3a;
+      --muted: #60717a;
+      --line: #dbe5e7;
+      --white: #ffffff;
+      --shadow: 0 24px 60px rgba(7,29,50,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--white); font-family: 'DM Sans', Arial, sans-serif; line-height: 1.65; }
+    h1, h2, h3 { margin: 0; color: var(--navy); font-family: 'Space Grotesk', Arial, sans-serif; line-height: 1.1; }
+    h1 { font-size: clamp(2.55rem, 6vw, 5.2rem); letter-spacing: -.055em; }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -.04em; }
+    h3 { font-size: 1.25rem; }
+    p { margin: 0 0 1rem; }
+    a { color: inherit; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow { display: inline-flex; gap: .55rem; align-items: center; color: var(--blue); font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .eyebrow::before { content: ''; width: 28px; height: 3px; border-radius: 99px; background: var(--lime); }
+    .hero { position: relative; overflow: hidden; color: var(--white); background: var(--navy); }
+    .hero::after { content: ''; position: absolute; width: 520px; height: 520px; right: -190px; top: -170px; border-radius: 50%; background: radial-gradient(circle, rgba(42,167,214,.42), rgba(42,167,214,0) 70%); pointer-events: none; }
+    .hero .wrap { position: relative; z-index: 1; padding: 76px 0 86px; }
+    .hero .eyebrow { color: var(--aqua); }
+    .hero .eyebrow::before { background: var(--lime); }
+    .hero h1 { max-width: 880px; margin-top: 22px; color: var(--white); }
+    .hero-lead { max-width: 720px; margin: 26px 0 0; color: #d7e8ee; font-size: 1.2rem; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+    .pill { display: inline-flex; padding: 9px 14px; border: 1px solid rgba(169,230,231,.35); border-radius: 999px; color: var(--aqua); font-size: .86rem; }
+    .hero-image { position: relative; z-index: 1; margin-top: -42px; }
+    .hero-image img { display: block; width: 100%; max-height: 520px; object-fit: cover; border: 10px solid var(--white); border-radius: 22px; box-shadow: var(--shadow); }
+    .caption { margin-top: 10px; color: var(--muted); font-size: .8rem; }
+    section { padding: 92px 0; }
+    .section-head { max-width: 750px; margin-bottom: 42px; }
+    .section-head .eyebrow { margin-bottom: 18px; }
+    .section-head p { margin-top: 18px; color: var(--muted); font-size: 1.08rem; }
+    .overview { background: var(--cream); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .card { padding: 30px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); box-shadow: 0 10px 30px rgba(7,29,50,.05); }
+    .card p { margin-top: 14px; color: var(--muted); }
+    .dark-card { color: #d7e8ee; border: 0; background: var(--navy); }
+    .dark-card h3 { color: var(--white); }
+    .dark-card p { color: #c0d3da; }
+    .accent-card { border: 0; background: var(--aqua); }
+    .accent-card p { color: #204959; }
+    .list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .list li { position: relative; padding: 0 0 14px 30px; }
+    .list li::before { content: '✓'; position: absolute; left: 0; top: 2px; display: grid; width: 19px; height: 19px; place-items: center; border-radius: 50%; color: var(--navy); background: var(--lime); font-size: .72rem; font-weight: 800; }
+    .quote { margin-top: 30px; padding: 22px 24px; border-left: 4px solid var(--lime); background: #f3f8fa; color: var(--navy); font-size: 1.08rem; font-weight: 600; }
+    .process { background: var(--cream); }
+    .step { position: relative; padding: 26px 26px 26px 72px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
+    .step-number { position: absolute; top: 24px; left: 24px; display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; color: var(--navy); background: var(--lime); font-weight: 700; }
+    .step p { margin-top: 10px; color: var(--muted); }
+    .results { color: var(--white); background: var(--blue); }
+    .results h2, .results h3 { color: var(--white); }
+    .results .eyebrow { color: var(--aqua); }
+    .result-card { padding: 25px; border: 1px solid rgba(255,255,255,.2); border-radius: 16px; background: rgba(7,29,50,.25); }
+    .result-card p { margin-top: 10px; color: #d7e8ee; }
+    .faq details { padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .faq summary { cursor: pointer; color: var(--navy); font-family: 'Space Grotesk', Arial, sans-serif; font-size: 1.08rem; font-weight: 600; }
+    .faq details p { max-width: 800px; margin: 14px 0 0; color: var(--muted); }
+    .cta { padding: 76px 0; color: var(--white); background: linear-gradient(115deg, var(--navy), #0b4163); }
+    .cta .wrap { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .cta h2 { color: var(--white); }
+    .cta p { max-width: 620px; margin-top: 16px; color: #c9dce3; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-width: 210px; padding: 15px 22px; border-radius: 999px; color: var(--navy); background: var(--lime); font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .button:hover { background: #e4f988; }
+    .source-note { padding: 30px 0 44px; color: var(--muted); font-size: .85rem; }
+    .source-note a { color: var(--blue); }
+    @media (max-width: 780px) {
+      .wrap { width: min(100% - 28px, 1160px); }
+      .hero .wrap { padding: 56px 0 70px; }
+      section { padding: 66px 0; }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .hero-image { margin-top: -30px; }
+      .hero-image img { border-width: 6px; border-radius: 15px; }
+      .cta .wrap { display: block; }
+      .cta .button { margin-top: 24px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Self-Storage Facility Security Systems: Regional Case Study",
+    "description": "How Security by APS used off-grid ProVisual monitoring to help protect regional self-storage facilities.",
+    "image": ["provisual-storage-monitoring.webp"],
+    "author": {"@type": "Organization", "name": "Security by APS"},
+    "publisher": {"@type": "Organization", "name": "Security by APS"},
+    "about": "Self-storage facility security systems",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://paulw-git.github.io/seo-client-reports/security-by-aps-self-storage-case-study/"}
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Security by APS case study demo</span>
+        <h1>Self-storage security that keeps watch when the property is empty.</h1>
+        <p class="hero-lead">How Security by APS used off-grid ProVisual™ monitoring to help protect regional storage facilities across Greater New Orleans—without relying on hardwired internet or a major construction project.</p>
+        <div class="hero-meta">
+          <span class="pill">Regional self-storage facilities</span>
+          <span class="pill">Solar + battery powered</span>
+          <span class="pill">AI detection + live monitoring</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap hero-image">
+      <img src="provisual-storage-monitoring.webp" alt="ProVisual security camera footage monitoring a storage facility lot at night">
+      <p class="caption">Image used for this demo page; see the published APS case study for the original project context.</p>
+    </div>
+
+    <section class="overview">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">The project at a glance</span>
+          <h2>A security challenge shaped by distance, darkness, and infrastructure.</h2>
+          <p>Storage facilities can have wide perimeters, multiple gates, and long stretches of time without staff on site. In this published APS case study, the facilities also varied in power, connectivity, lighting, and surrounding conditions.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card dark-card">
+            <h3>The challenge</h3>
+            <p>Recurring break-ins, vandalism, and attempted theft created risk after hours. Operators needed visibility at entry gates, loading zones, and perimeter fencing, including locations with little or no hardwired connectivity.</p>
+          </article>
+          <article class="card accent-card">
+            <h3>The APS approach</h3>
+            <p>APS deployed self-contained ProVisual™ NEMA Box units configured with solar panels, long-life batteries, AI analytics, and remote monitoring through CHeKT Bridge integration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">A system built for the site</span>
+          <h2>Coverage that can work across connected and off-grid properties.</h2>
+          <p>The value of this approach was not just adding another camera. It was matching the monitoring system to the operating reality of each facility.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Off-grid deployment</h3>
+            <p>Solar panels and long-life batteries enabled the NEMA Box units to operate independently of facility power and hardline internet where needed.</p>
+          </article>
+          <article class="card">
+            <h3>AI-assisted alerts</h3>
+            <p>AI analytics helped distinguish people and vehicles from wildlife and other sources of nuisance activity, improving the quality of alerts.</p>
+          </article>
+          <article class="card">
+            <h3>Remote response</h3>
+            <p>Through CHeKT Bridge integration, alerts could support live video monitoring and response actions such as talk-down, dispatch, or staff notification.</p>
+          </article>
+        </div>
+        <div class="quote">“The goal was to make alerts more actionable—not simply to generate more of them.”</div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Generation Contracting’s role</span>
+          <h2>How APS helped the facilities move from visibility gaps to a more proactive security plan.</h2>
+        </div>
+        <div class="grid-2">
+          <div class="step"><span class="step-number">1</span><h3>Reviewed the operating environment</h3><p>APS accounted for gates, loading zones, perimeter fencing, lighting conditions, tree coverage, power, and connectivity across different sites.</p></div>
+          <div class="step"><span class="step-number">2</span><h3>Designed a flexible deployment</h3><p>The team configured self-contained ProVisual™ NEMA Box units to support locations with different infrastructure and coverage needs.</p></div>
+          <div class="step"><span class="step-number">3</span><h3>Added detection and monitoring</h3><p>Solar and battery power supported operation, while AI analytics and CHeKT Bridge integration helped turn activity into verified, actionable alerts.</p></div>
+          <div class="step"><span class="step-number">4</span><h3>Supported response decisions</h3><p>Remote operators could use live video and available response options to talk down, dispatch, or notify staff before an incident escalated.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">The result</span>
+          <h2>A clearer path from suspicious activity to an informed response.</h2>
+          <p>This case study does not promise that every facility will produce the same outcome. It shows how APS connected detection, verification, and response for a specific storage-facility use case.</p>
+        </div>
+        <div class="grid-3">
+          <article class="result-card"><h3>Fewer nuisance alerts</h3><p>AI human detection helped reduce alerts caused by wind, shadows, bugs, and animals.</p></article>
+          <article class="result-card"><h3>Remote access across sites</h3><p>Owners gained access to live and recorded video from phones, tablets, or desktop devices across multiple facilities.</p></article>
+          <article class="result-card"><h3>Flexible coverage</h3><p>Solar-powered placement made it possible to address sites with different infrastructure, tree coverage, and lighting conditions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Project questions</span>
+          <h2>Questions storage operators may have.</h2>
+        </div>
+        <details open><summary>Can self-storage facilities be monitored without hardwired internet?</summary><p>In this APS case study, solar-powered ProVisual™ NEMA Box units were deployed for sites with minimal infrastructure. A site evaluation would determine what combination of power, connectivity, placement, and monitoring is appropriate.</p></details>
+        <details><summary>What areas can a storage-facility security system cover?</summary><p>The published project focused on entry gates, loading zones, perimeter fencing, and other areas where after-hours activity created risk. Final coverage depends on the property layout and the desired detection goals.</p></details>
+        <details><summary>What happens after an alert is verified?</summary><p>With live remote monitoring and CHeKT Bridge integration, available response actions can include talk-down, dispatch, or staff notification, depending on the site’s plan and the nature of the event.</p></details>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Protect a storage property</span>
+          <h2>Need a better way to watch gates, lots, and perimeter areas?</h2>
+          <p>Talk with Security by APS about a security approach designed around your facility’s layout, power, connectivity, and operating hours.</p>
+        </div>
+        <a class="button" href="https://securitybyaps.com/request-a-free-quote/">Request a free quote</a>
+      </div>
+    </section>
+
+    <div class="wrap source-note">Demo content is based on the published <a href="https://securitybyaps.com/case-studies/regional-storage-facilities-greater-new-orleans/">Security by APS regional storage facilities case study</a>. Verify project permissions, approved wording, and final performance claims before using this page as a live client case study.</div>
+  </main>
+</body>
+</html>
