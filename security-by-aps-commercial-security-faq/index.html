@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Commercial Security FAQs for New Orleans Businesses | Security by APS</title>
-<meta content="Answers to common questions about commercial security systems, alarm monitoring, video surveillance, access control, fire protection, and remote monitoring in the New Orleans area." name="description"/>
+<meta content="Answers to common questions about commercial security systems, alarm monitoring, video surveillance, access control, fire protection, and remote monitoring in the New Orleans area." name="description"/><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://paulw-git.github.io/seo-client-reports/security-by-aps-commercial-security-faq/" rel="canonical"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -87,6 +87,17 @@
     .button:hover { background: #e4f988; }
     .source-note { padding: 30px 0 44px; color: var(--muted); font-size: .85rem; }
     .source-note a { color: var(--blue); }
+
+    .faq-accordion .accordion-item { border: 1px solid var(--line); border-radius: 16px !important; overflow: hidden; margin-bottom: 14px; box-shadow: 0 10px 30px rgba(7,29,50,.05); }
+    .faq-accordion .accordion-button { color: var(--navy); background: var(--white); font-family: 'Space Grotesk', Arial, sans-serif; font-size: 1.12rem; font-weight: 600; box-shadow: none; }
+    .faq-accordion .accordion-button:not(.collapsed) { color: var(--navy); background: var(--aqua); box-shadow: none; }
+    .faq-accordion .accordion-button::after { filter: saturate(.7); }
+    .faq-accordion .accordion-body { color: var(--muted); background: var(--white); }
+    .faq-category { margin: 32px 0 14px; color: var(--blue); font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .faq-intro { max-width: 780px; color: var(--muted); font-size: 1.08rem; }
+    .faq-cta { padding: 26px; border-radius: 16px; color: var(--white); background: var(--navy); }
+    .faq-cta h3 { color: var(--white); }
+    .faq-cta p { color: #c9dce3; }
     @media (max-width: 780px) {
       .wrap { width: min(100% - 28px, 1160px); }
       .hero .wrap { padding: 56px 0 70px; }
@@ -146,6 +157,94 @@
     },
     {
       "@type": "Question",
+      "name": "What is proactive video monitoring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Proactive video monitoring combines cameras, analytics, alerts, and a response process intended to identify suspicious activity and support action while an event is happening\u2014not only record footage for later review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI help reduce nuisance alerts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-assisted analytics can help classify activity and focus attention on people, vehicles, or other defined events. Results depend on camera placement, lighting, system configuration, and the monitoring plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can operators use audio deterrence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some proactive monitoring systems can support live audio warnings, sirens, or other deterrence options. Ask which features are available and how they fit into the property\u2019s response procedures."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can video systems work at temporary sites?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mobile surveillance units may be appropriate for construction sites, events, changing locations, or properties where permanent infrastructure is not yet available. A site evaluation determines the practical deployment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does commercial access control manage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Access control can manage who enters a door, gate, building, room, or restricted area and when access is allowed. Systems may use cards, fobs, mobile credentials, PINs, or other approved methods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can access control work with cameras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In some system designs, access events and video can be reviewed together. This can help a business understand what happened at a door or gate and maintain a clearer record of activity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What fire and life-safety systems does APS provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "APS describes monitored smoke detection, carbon monoxide detection, fire alarm systems, and related fire-protection services. Commercial requirements depend on the building, occupancy, local rules, and system design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should a business test or service its system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Testing, inspection, and maintenance schedules depend on the equipment, property, applicable requirements, and service agreement. Businesses should follow the manufacturer\u2019s guidance and their provider\u2019s documented schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who supports the system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask about installation, service calls, maintenance, monitoring, technical support, training, and what happens when equipment needs to be replaced."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the system grow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Consider future doors, locations, employees, tenants, cameras, fire systems, and changes to the building or business."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request a clear explanation of equipment, installation, monitoring, response procedures, warranties, user access, contract terms, and ongoing support."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What areas does Security by APS serve?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -179,107 +278,20 @@
 <span class="eyebrow">Security by APS FAQ resource</span>
 <h1>Commercial security questions, answered clearly.</h1>
 <p class="hero-lead">A practical FAQ guide for New Orleans-area businesses evaluating alarm monitoring, video surveillance, access control, fire protection, and remote security technology.</p>
-<div class="hero-meta">
-<span class="pill">For business owners</span>
-<span class="pill">For property managers</span>
-<span class="pill">For facility teams</span>
-</div>
+<div class="hero-meta"><span class="pill">For business owners</span><span class="pill">For property managers</span><span class="pill">For facility teams</span></div>
 </div>
 </section>
-<div class="wrap hero-image">
-<img alt="Commercial security monitoring view for a business property" src="commercial-security-faq.webp"/>
-<p class="caption">Representative commercial-security image used for this FAQ demonstration.</p>
-</div>
-<section class="overview">
+<div class="wrap hero-image"><img alt="Commercial security monitoring view for a business property" src="commercial-security-faq.webp"/><p class="caption">Representative commercial-security image used for this FAQ demonstration.</p></div>
+<section class="overview faq-page">
 <div class="wrap">
-<div class="section-head">
-<span class="eyebrow">Start here</span>
-<h2>The right system depends on the property and the response plan.</h2>
-<p>A small retail space, a multi-tenant building, a warehouse, and a temporary job site do not have the same security needs. These answers are designed to help you understand the main decisions before requesting a professional evaluation.</p>
+<div class="section-head"><span class="eyebrow">All answers open by default</span><h2>Commercial security FAQ.</h2><p class="faq-intro">Browse the questions below. Every accordion segment is expanded so the full resource can be read without additional clicks. The right system depends on the property and the response plan.</p></div>
+<div class="accordion faq-accordion" id="commercialFaqAccordion"><p class="faq-category">Commercial monitoring</p><div class="accordion-item" data-category="Commercial monitoring"><h3 class="accordion-header" id="faqHeading1"><button aria-controls="faqCollapse1" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse1" data-bs-toggle="collapse" type="button">What is the difference between an alarm system and professional monitoring?</button></h3><div aria-labelledby="faqHeading1" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse1"><div class="accordion-body">An alarm system detects a condition, such as an intrusion, fire, or environmental event. Professional monitoring adds a team and a response process that can receive alerts, evaluate available information, contact authorized people, and follow the agreed response plan. The exact process depends on the system and service terms.</div></div></div><div class="accordion-item" data-category="Commercial monitoring"><h3 class="accordion-header" id="faqHeading2"><button aria-controls="faqCollapse2" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse2" data-bs-toggle="collapse" type="button">What happens when an alarm is triggered after business hours?</button></h3><div aria-labelledby="faqHeading2" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse2"><div class="accordion-body">The response depends on the type of alarm and the plan established for the property. A monitoring team may contact designated keyholders or emergency services according to the approved protocol. Businesses should confirm how contacts, verification, dispatch, and false-alarm procedures are handled.</div></div></div><div class="accordion-item" data-category="Commercial monitoring"><h3 class="accordion-header" id="faqHeading3"><button aria-controls="faqCollapse3" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse3" data-bs-toggle="collapse" type="button">Can business owners still access the system remotely?</button></h3><div aria-labelledby="faqHeading3" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse3"><div class="accordion-body">Many modern systems provide authorized users with remote access to live video, recorded events, alerts, doors, or other controls. Ask which features are available for your system, user permissions, and property configuration.</div></div></div><div class="accordion-item" data-category="Commercial monitoring"><h3 class="accordion-header" id="faqHeading4"><button aria-controls="faqCollapse4" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse4" data-bs-toggle="collapse" type="button">Can monitoring be customized for different businesses?</button></h3><div aria-labelledby="faqHeading4" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse4"><div class="accordion-body">Yes. A system can be designed around the property layout, business hours, staff, access points, equipment, fire requirements, and desired response. A retail store, office, warehouse, school, and construction site may each need a different combination of services.</div></div></div><p class="faq-category">Video surveillance and ProVisual</p><div class="accordion-item" data-category="Video surveillance and ProVisual"><h3 class="accordion-header" id="faqHeading5"><button aria-controls="faqCollapse5" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse5" data-bs-toggle="collapse" type="button">What is proactive video monitoring?</button></h3><div aria-labelledby="faqHeading5" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse5"><div class="accordion-body">Proactive video monitoring combines cameras, analytics, alerts, and a response process intended to identify suspicious activity and support action while an event is happening—not only record footage for later review.</div></div></div><div class="accordion-item" data-category="Video surveillance and ProVisual"><h3 class="accordion-header" id="faqHeading6"><button aria-controls="faqCollapse6" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse6" data-bs-toggle="collapse" type="button">Can AI help reduce nuisance alerts?</button></h3><div aria-labelledby="faqHeading6" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse6"><div class="accordion-body">AI-assisted analytics can help classify activity and focus attention on people, vehicles, or other defined events. Results depend on camera placement, lighting, system configuration, and the monitoring plan.</div></div></div><div class="accordion-item" data-category="Video surveillance and ProVisual"><h3 class="accordion-header" id="faqHeading7"><button aria-controls="faqCollapse7" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse7" data-bs-toggle="collapse" type="button">Can operators use audio deterrence?</button></h3><div aria-labelledby="faqHeading7" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse7"><div class="accordion-body">Some proactive monitoring systems can support live audio warnings, sirens, or other deterrence options. Ask which features are available and how they fit into the property’s response procedures.</div></div></div><div class="accordion-item" data-category="Video surveillance and ProVisual"><h3 class="accordion-header" id="faqHeading8"><button aria-controls="faqCollapse8" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse8" data-bs-toggle="collapse" type="button">Can video systems work at temporary sites?</button></h3><div aria-labelledby="faqHeading8" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse8"><div class="accordion-body">Mobile surveillance units may be appropriate for construction sites, events, changing locations, or properties where permanent infrastructure is not yet available. A site evaluation determines the practical deployment.</div></div></div><p class="faq-category">Access control and fire protection</p><div class="accordion-item" data-category="Access control and fire protection"><h3 class="accordion-header" id="faqHeading9"><button aria-controls="faqCollapse9" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse9" data-bs-toggle="collapse" type="button">What does commercial access control manage?</button></h3><div aria-labelledby="faqHeading9" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse9"><div class="accordion-body">Access control can manage who enters a door, gate, building, room, or restricted area and when access is allowed. Systems may use cards, fobs, mobile credentials, PINs, or other approved methods.</div></div></div><div class="accordion-item" data-category="Access control and fire protection"><h3 class="accordion-header" id="faqHeading10"><button aria-controls="faqCollapse10" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse10" data-bs-toggle="collapse" type="button">Can access control work with cameras?</button></h3><div aria-labelledby="faqHeading10" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse10"><div class="accordion-body">In some system designs, access events and video can be reviewed together. This can help a business understand what happened at a door or gate and maintain a clearer record of activity.</div></div></div><div class="accordion-item" data-category="Access control and fire protection"><h3 class="accordion-header" id="faqHeading11"><button aria-controls="faqCollapse11" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse11" data-bs-toggle="collapse" type="button">What fire and life-safety systems does APS provide?</button></h3><div aria-labelledby="faqHeading11" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse11"><div class="accordion-body">APS describes monitored smoke detection, carbon monoxide detection, fire alarm systems, and related fire-protection services. Commercial requirements depend on the building, occupancy, local rules, and system design.</div></div></div><div class="accordion-item" data-category="Access control and fire protection"><h3 class="accordion-header" id="faqHeading12"><button aria-controls="faqCollapse12" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse12" data-bs-toggle="collapse" type="button">How often should a business test or service its system?</button></h3><div aria-labelledby="faqHeading12" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse12"><div class="accordion-body">Testing, inspection, and maintenance schedules depend on the equipment, property, applicable requirements, and service agreement. Businesses should follow the manufacturer’s guidance and their provider’s documented schedule.</div></div></div><p class="faq-category">Planning and service</p><div class="accordion-item" data-category="Planning and service"><h3 class="accordion-header" id="faqHeading13"><button aria-controls="faqCollapse13" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse13" data-bs-toggle="collapse" type="button">Who supports the system?</button></h3><div aria-labelledby="faqHeading13" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse13"><div class="accordion-body">Ask about installation, service calls, maintenance, monitoring, technical support, training, and what happens when equipment needs to be replaced.</div></div></div><div class="accordion-item" data-category="Planning and service"><h3 class="accordion-header" id="faqHeading14"><button aria-controls="faqCollapse14" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse14" data-bs-toggle="collapse" type="button">Can the system grow?</button></h3><div aria-labelledby="faqHeading14" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse14"><div class="accordion-body">Consider future doors, locations, employees, tenants, cameras, fire systems, and changes to the building or business.</div></div></div><div class="accordion-item" data-category="Planning and service"><h3 class="accordion-header" id="faqHeading15"><button aria-controls="faqCollapse15" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse15" data-bs-toggle="collapse" type="button">What is included?</button></h3><div aria-labelledby="faqHeading15" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse15"><div class="accordion-body">Request a clear explanation of equipment, installation, monitoring, response procedures, warranties, user access, contract terms, and ongoing support.</div></div></div><p class="faq-category">Local service questions</p><div class="accordion-item" data-category="Local service questions"><h3 class="accordion-header" id="faqHeading16"><button aria-controls="faqCollapse16" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse16" data-bs-toggle="collapse" type="button">What areas does Security by APS serve?</button></h3><div aria-labelledby="faqHeading16" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse16"><div class="accordion-body">APS is headquartered in Metairie, Louisiana and publicly describes service across Greater New Orleans, the Northshore, Gulf Coast regions, and parts of Mississippi. Confirm current availability for your property during the consultation.</div></div></div><div class="accordion-item" data-category="Local service questions"><h3 class="accordion-header" id="faqHeading17"><button aria-controls="faqCollapse17" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse17" data-bs-toggle="collapse" type="button">Does APS work with small businesses?</button></h3><div aria-labelledby="faqHeading17" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse17"><div class="accordion-body">APS describes business-security services for companies of different sizes, including shops, restaurants, offices, warehouses, and commercial spaces. The recommended system should be sized to the property and operating needs.</div></div></div><div class="accordion-item" data-category="Local service questions"><h3 class="accordion-header" id="faqHeading18"><button aria-controls="faqCollapse18" aria-expanded="true" class="accordion-button" data-bs-target="#faqCollapse18" data-bs-toggle="collapse" type="button">What information should I prepare before requesting an evaluation?</button></h3><div aria-labelledby="faqHeading18" class="accordion-collapse collapse show" data-bs-parent="#commercialFaqAccordion" id="faqCollapse18"><div class="accordion-body">Be ready to describe the property type, locations, business hours, current equipment, access points, recurring concerns, internet or power limitations, and who should be involved in the response plan.</div></div></div>
+<p class="faq-category">Your next step</p>
+<div class="faq-cta"><h3>Still have questions about the right security system?</h3><p>Talk with Security by APS about your property, current concerns, and the monitoring or protection plan that may fit your business.</p><a class="button" href="https://securitybyaps.com/request-a-free-quote/">Request a free security evaluation</a></div>
 </div>
-<div class="grid-3">
-<article class="card dark-card"><h3>See what is happening</h3><p>Video surveillance, AI-assisted detection, and remote access can help authorized users understand activity around the property.</p></article>
-<article class="card accent-card"><h3>Control who enters</h3><p>Access control can help manage employees, tenants, vendors, visitors, doors, gates, and restricted areas.</p></article>
-<article class="card"><h3>Plan the response</h3><p>Monitoring is most useful when the property has a clear plan for alerts, verification, keyholders, staff, and emergency response.</p></article>
-</div>
-</div>
-</section>
-<section class="faq">
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">Commercial monitoring</span>
-<h2>Alarm and professional monitoring FAQs.</h2>
-<p>These questions focus on what happens after a security or fire alert is generated.</p>
-</div>
-<details open=""><summary>What is the difference between an alarm system and professional monitoring?</summary><p>An alarm system detects a condition, such as an intrusion, fire, or environmental event. Professional monitoring adds a team and a response process that can receive alerts, evaluate available information, contact authorized people, and follow the agreed response plan. The exact process depends on the system and service terms.</p></details>
-<details><summary>What happens when an alarm is triggered after business hours?</summary><p>The response depends on the type of alarm and the plan established for the property. A monitoring team may contact designated keyholders or emergency services according to the approved protocol. Businesses should confirm how contacts, verification, dispatch, and false-alarm procedures are handled.</p></details>
-<details><summary>Can business owners still access the system remotely?</summary><p>Many modern systems provide authorized users with remote access to live video, recorded events, alerts, doors, or other controls. Ask which features are available for your system, user permissions, and property configuration.</p></details>
-<details><summary>Can monitoring be customized for different businesses?</summary><p>Yes. A system can be designed around the property layout, business hours, staff, access points, equipment, fire requirements, and desired response. A retail store, office, warehouse, school, and construction site may each need a different combination of services.</p></details>
-</div>
-</section>
-<section>
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">Video surveillance and ProVisual</span>
-<h2>Questions about cameras, AI, and remote video.</h2>
-</div>
-<div class="grid-2">
-<div class="step"><span class="step-number">1</span><h3>What is proactive video monitoring?</h3><p>Proactive video monitoring combines cameras, analytics, alerts, and a response process intended to identify suspicious activity and support action while an event is happening—not only record footage for later review.</p></div>
-<div class="step"><span class="step-number">2</span><h3>Can AI help reduce nuisance alerts?</h3><p>AI-assisted analytics can help classify activity and focus attention on people, vehicles, or other defined events. Results depend on camera placement, lighting, system configuration, and the monitoring plan.</p></div>
-<div class="step"><span class="step-number">3</span><h3>Can operators use audio deterrence?</h3><p>Some proactive monitoring systems can support live audio warnings, sirens, or other deterrence options. Ask which features are available and how they fit into the property’s response procedures.</p></div>
-<div class="step"><span class="step-number">4</span><h3>Can video systems work at temporary sites?</h3><p>Mobile surveillance units may be appropriate for construction sites, events, changing locations, or properties where permanent infrastructure is not yet available. A site evaluation determines the practical deployment.</p></div>
-</div>
-</div>
-</section>
-<section class="process">
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">Access control and fire protection</span>
-<h2>Questions about doors, credentials, smoke, and carbon monoxide.</h2>
-</div>
-<div class="grid-2">
-<div class="card"><h3>What does commercial access control manage?</h3><p>Access control can manage who enters a door, gate, building, room, or restricted area and when access is allowed. Systems may use cards, fobs, mobile credentials, PINs, or other approved methods.</p></div>
-<div class="card"><h3>Can access control work with cameras?</h3><p>In some system designs, access events and video can be reviewed together. This can help a business understand what happened at a door or gate and maintain a clearer record of activity.</p></div>
-<div class="card"><h3>What fire and life-safety systems does APS provide?</h3><p>APS describes monitored smoke detection, carbon monoxide detection, fire alarm systems, and related fire-protection services. Commercial requirements depend on the building, occupancy, local rules, and system design.</p></div>
-<div class="card"><h3>How often should a business test or service its system?</h3><p>Testing, inspection, and maintenance schedules depend on the equipment, property, applicable requirements, and service agreement. Businesses should follow the manufacturer’s guidance and their provider’s documented schedule.</p></div>
-</div>
-</div>
-</section>
-<section class="results">
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">Planning and service</span>
-<h2>Questions to ask before choosing a security provider.</h2>
-</div>
-<div class="grid-3">
-<article class="result-card"><h3>Who supports the system?</h3><p>Ask about installation, service calls, maintenance, monitoring, technical support, training, and what happens when equipment needs to be replaced.</p></article>
-<article class="result-card"><h3>Can the system grow?</h3><p>Consider future doors, locations, employees, tenants, cameras, fire systems, and changes to the building or business.</p></article>
-<article class="result-card"><h3>What is included?</h3><p>Request a clear explanation of equipment, installation, monitoring, response procedures, warranties, user access, contract terms, and ongoing support.</p></article>
-</div>
-</div>
-</section>
-<section class="faq">
-<div class="wrap">
-<div class="section-head">
-<span class="eyebrow">Local service questions</span>
-<h2>Does APS serve my business?</h2>
-</div>
-<details open=""><summary>What areas does Security by APS serve?</summary><p>APS is headquartered in Metairie, Louisiana and publicly describes service across Greater New Orleans, the Northshore, Gulf Coast regions, and parts of Mississippi. Confirm current availability for your property during the consultation.</p></details>
-<details><summary>Does APS work with small businesses?</summary><p>APS describes business-security services for companies of different sizes, including shops, restaurants, offices, warehouses, and commercial spaces. The recommended system should be sized to the property and operating needs.</p></details>
-<details><summary>What information should I prepare before requesting an evaluation?</summary><p>Be ready to describe the property type, locations, business hours, current equipment, access points, recurring concerns, internet or power limitations, and who should be involved in the response plan.</p></details>
-</div>
-</section>
-<section class="cta">
-<div class="wrap">
-<div>
-<span class="eyebrow">Plan your business protection</span>
-<h2>Still have questions about the right security system?</h2>
-<p>Talk with Security by APS about your property, current concerns, and the monitoring or protection plan that may fit your business.</p>
-</div>
-<a class="button" href="https://securitybyaps.com/request-a-free-quote/">Request a free security evaluation</a>
 </div>
 </section>
 <div class="wrap source-note">This FAQ page is a demonstration concept based on Security by APS’s published services and public FAQ content. Confirm product availability, regulatory requirements, service scope, and final claims before publishing as a live client page.</div>
 </main>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>
