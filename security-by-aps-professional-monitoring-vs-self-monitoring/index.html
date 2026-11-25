@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="noindex, nofollow, noarchive, nosnippet, noimageindex" name="robots"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Professional Monitoring vs. Self-Monitoring | Security by APS</title>
+<meta content="Compare professional security monitoring with self-monitoring, including response, availability, alerts, video access, and the questions to ask before choosing an approach." name="description"/>
+<link href="https://paulw-git.github.io/seo-client-reports/security-by-aps-professional-monitoring-vs-self-monitoring/" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --navy: #071d32;
+      --blue: #0b5d91;
+      --sky: #2aa7d6;
+      --aqua: #a9e6e7;
+      --lime: #d5ed5d;
+      --cream: #f5f8f7;
+      --ink: #1e2f3a;
+      --muted: #60717a;
+      --line: #dbe5e7;
+      --white: #ffffff;
+      --shadow: 0 24px 60px rgba(7,29,50,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--white); font-family: 'DM Sans', Arial, sans-serif; line-height: 1.65; }
+    h1, h2, h3 { margin: 0; color: var(--navy); font-family: 'Space Grotesk', Arial, sans-serif; line-height: 1.1; }
+    h1 { font-size: clamp(2.55rem, 6vw, 5.2rem); letter-spacing: -.055em; }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -.04em; }
+    h3 { font-size: 1.25rem; }
+    p { margin: 0 0 1rem; }
+    a { color: inherit; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow { display: inline-flex; gap: .55rem; align-items: center; color: var(--blue); font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .eyebrow::before { content: ''; width: 28px; height: 3px; border-radius: 99px; background: var(--lime); }
+    .hero { position: relative; overflow: hidden; color: var(--white); background: var(--navy); }
+    .hero::after { content: ''; position: absolute; width: 520px; height: 520px; right: -190px; top: -170px; border-radius: 50%; background: radial-gradient(circle, rgba(42,167,214,.42), rgba(42,167,214,0) 70%); pointer-events: none; }
+    .hero .wrap { position: relative; z-index: 1; padding: 76px 0 86px; }
+    .hero .eyebrow { color: var(--aqua); }
+    .hero .eyebrow::before { background: var(--lime); }
+    .hero h1 { max-width: 880px; margin-top: 22px; color: var(--white); }
+    .hero-lead { max-width: 720px; margin: 26px 0 0; color: #d7e8ee; font-size: 1.2rem; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+    .pill { display: inline-flex; padding: 9px 14px; border: 1px solid rgba(169,230,231,.35); border-radius: 999px; color: var(--aqua); font-size: .86rem; }
+    .hero-image { position: relative; z-index: 1; margin-top: -42px; }
+    .hero-image img { display: block; width: 100%; max-height: 520px; object-fit: cover; border: 10px solid var(--white); border-radius: 22px; box-shadow: var(--shadow); }
+    .caption { margin-top: 10px; color: var(--muted); font-size: .8rem; }
+    section { padding: 92px 0; }
+    .section-head { max-width: 750px; margin-bottom: 42px; }
+    .section-head .eyebrow { margin-bottom: 18px; }
+    .section-head p { margin-top: 18px; color: var(--muted); font-size: 1.08rem; }
+    .overview { background: var(--cream); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .card { padding: 30px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); box-shadow: 0 10px 30px rgba(7,29,50,.05); }
+    .card p { margin-top: 14px; color: var(--muted); }
+    .dark-card { color: #d7e8ee; border: 0; background: var(--navy); }
+    .dark-card h3 { color: var(--white); }
+    .dark-card p { color: #c0d3da; }
+    .accent-card { border: 0; background: var(--aqua); }
+    .accent-card p { color: #204959; }
+    .list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .list li { position: relative; padding: 0 0 14px 30px; }
+    .list li::before { content: '✓'; position: absolute; left: 0; top: 2px; display: grid; width: 19px; height: 19px; place-items: center; border-radius: 50%; color: var(--navy); background: var(--lime); font-size: .72rem; font-weight: 800; }
+    .quote { margin-top: 30px; padding: 22px 24px; border-left: 4px solid var(--lime); background: #f3f8fa; color: var(--navy); font-size: 1.08rem; font-weight: 600; }
+    .process { background: var(--cream); }
+    .step { position: relative; padding: 26px 26px 26px 72px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
+    .step-number { position: absolute; top: 24px; left: 24px; display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; color: var(--navy); background: var(--lime); font-weight: 700; }
+    .step p { margin-top: 10px; color: var(--muted); }
+    .results { color: var(--white); background: var(--blue); }
+    .results h2, .results h3 { color: var(--white); }
+    .results .eyebrow { color: var(--aqua); }
+    .result-card { padding: 25px; border: 1px solid rgba(255,255,255,.2); border-radius: 16px; background: rgba(7,29,50,.25); }
+    .result-card p { margin-top: 10px; color: #d7e8ee; }
+    .faq details { padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .faq summary { cursor: pointer; color: var(--navy); font-family: 'Space Grotesk', Arial, sans-serif; font-size: 1.08rem; font-weight: 600; }
+    .faq details p { max-width: 800px; margin: 14px 0 0; color: var(--muted); }
+    .cta { padding: 76px 0; color: var(--white); background: linear-gradient(115deg, var(--navy), #0b4163); }
+    .cta .wrap { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .cta h2 { color: var(--white); }
+    .cta p { max-width: 620px; margin-top: 16px; color: #c9dce3; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-width: 210px; padding: 15px 22px; border-radius: 999px; color: var(--navy); background: var(--lime); font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .button:hover { background: #e4f988; }
+    .source-note { padding: 30px 0 44px; color: var(--muted); font-size: .85rem; }
+    .source-note a { color: var(--blue); }
+    @media (max-width: 780px) {
+      .wrap { width: min(100% - 28px, 1160px); }
+      .hero .wrap { padding: 56px 0 70px; }
+      section { padding: 66px 0; }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .hero-image { margin-top: -30px; }
+      .hero-image img { border-width: 6px; border-radius: 15px; }
+      .cta .wrap { display: block; }
+      .cta .button { margin-top: 24px; }
+    }
+  </style>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Professional Monitoring vs. Self-Monitoring",
+    "description": "A buyer guide comparing professional security monitoring with self-monitoring.",
+    "image": ["provisual-monitoring-guide.webp"],
+    "about": "Professional security monitoring and self-monitoring",
+    "publisher": {"@type": "Organization", "name": "Security by APS"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://paulw-git.github.io/seo-client-reports/security-by-aps-professional-monitoring-vs-self-monitoring/"}
+  }
+  </script>
+</head>
+<body>
+<main>
+<section class="hero">
+<div class="wrap">
+<span class="eyebrow">Security by APS buyer guide</span>
+<h1>Professional monitoring vs. self-monitoring.</h1>
+<p class="hero-lead">Understand the difference between receiving security alerts yourself and having a professional monitoring team help review and respond to activity around your property.</p>
+<div class="hero-meta">
+<span class="pill">Response planning</span>
+<span class="pill">24/7 availability</span>
+<span class="pill">Video + alarm options</span>
+</div>
+</div>
+</section>
+<div class="wrap hero-image">
+<img alt="Security monitoring view showing a property under video surveillance" src="provisual-monitoring-guide.webp"/>
+<p class="caption">Representative security monitoring image used for this buyer-guide demonstration.</p>
+</div>
+<section class="overview">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">The short answer</span>
+<h2>The biggest difference is who is responsible for the next step.</h2>
+<p>With self-monitoring, alerts go to you or someone on your team and you decide what to do. With professional monitoring, a trained monitoring team is part of the response process according to the plan established for the property.</p>
+</div>
+<div class="grid-2">
+<article class="card dark-card">
+<h3>Self-monitoring</h3>
+<p>You receive notifications, check video or alarm information, and decide whether to contact a keyholder, staff member, emergency service, or other response resource.</p>
+</article>
+<article class="card accent-card">
+<h3>Professional monitoring</h3>
+<p>A monitoring team helps watch for events and follow the response plan when activity or an alarm requires attention. APS describes its remote video service as providing 24/7 monitoring, alerts, and live operator intervention.</p>
+</article>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Compare the experience</span>
+<h2>Five questions that usually make the decision clearer.</h2>
+<p>Neither approach is automatically right for every home, business, or job site. Start by looking at the practical demands placed on the people responsible for security.</p>
+</div>
+<div class="grid-3">
+<article class="card">
+<h3>Who is watching?</h3>
+<p>Self-monitoring depends on an owner, manager, employee, or other contact noticing and acting on an alert. Professional monitoring adds a dedicated monitoring team to the process.</p>
+</article>
+<article class="card">
+<h3>What happens at 2 a.m.?</h3>
+<p>Consider whether the responsible person can reliably answer notifications during sleep, travel, meetings, weekends, holidays, or a busy shift.</p>
+</article>
+<article class="card">
+<h3>How much context is available?</h3>
+<p>Video analytics, live video, recorded footage, audio warnings, and a documented response plan can help turn an alert into a more informed decision.</p>
+</article>
+</div>
+<div class="quote">The right question is not only “Can I receive an alert?” It is “Who can make a useful decision when the alert arrives?”</div>
+</div>
+</section>
+<section class="process">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Decision guide</span>
+<h2>When each approach may be a better fit.</h2>
+</div>
+<div class="grid-2">
+<div class="step"><span class="step-number">A</span><h3>Self-monitoring may fit when…</h3><p>You are usually available, the property is smaller or lower risk, you are comfortable reviewing alerts, and you have a clear plan for contacting help when needed.</p></div>
+<div class="step"><span class="step-number">B</span><h3>Professional monitoring may fit when…</h3><p>The property needs continuous attention, staff are not always on site, there are multiple locations, or the response plan should not depend on one person noticing a phone notification.</p></div>
+<div class="step"><span class="step-number">C</span><h3>A combined approach may fit when…</h3><p>You want professional oversight while still giving authorized owners or managers remote access to live footage, events, and system information.</p></div>
+<div class="step"><span class="step-number">D</span><h3>Ask about the response process</h3><p>Before choosing a provider, ask who receives alerts, how events are verified, what talk-down or dispatch options exist, and how keyholders are contacted.</p></div>
+</div>
+</div>
+</section>
+<section class="results">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">What to compare from a provider</span>
+<h2>Look beyond the word “monitoring.”</h2>
+<p>Providers can use the same language to describe very different services. Ask for specific details about technology, availability, verification, and response.</p>
+</div>
+<div class="grid-3">
+<article class="result-card"><h3>Availability</h3><p>Is the service designed for 24/7 monitoring, and what happens outside office hours?</p></article>
+<article class="result-card"><h3>Verification</h3><p>Can the team use live video, AI-assisted detection, or other information to help evaluate an alert?</p></article>
+<article class="result-card"><h3>Response options</h3><p>Can the system support live audio, talk-down, dispatch, staff notification, or another agreed response?</p></article>
+</div>
+</div>
+</section>
+<section class="faq">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Buyer questions</span>
+<h2>Questions to ask before choosing.</h2>
+</div>
+<details open=""><summary>Does professional monitoring mean I cannot access my cameras?</summary><p>Not necessarily. Ask whether authorized owners or managers can still access live video, recorded events, and system controls remotely.</p></details>
+<details><summary>Is self-monitoring always less expensive?</summary><p>Pricing depends on the equipment, monitoring service, installation, response features, and other terms. Compare the total cost and the responsibility placed on your team rather than assuming one option is always cheaper.</p></details>
+<details><summary>Can professional monitoring reduce false alarms?</summary><p>Some systems use AI-assisted analytics and video verification to help prioritize activity. Ask how the provider distinguishes people, vehicles, animals, weather, and other causes of alerts.</p></details>
+<details><summary>What should a business include in its response plan?</summary><p>Define who is contacted, what counts as a verified event, when live audio or dispatch is appropriate, who can access video, and how the plan changes when staff, tenants, or site conditions change.</p></details>
+</div>
+</section>
+<section class="cta">
+<div class="wrap">
+<div>
+<span class="eyebrow">Choose the right level of support</span>
+<h2>Want help comparing monitoring options for your property?</h2>
+<p>Talk with Security by APS about the technology, response plan, and monitoring approach that fit your home, business, or temporary site.</p>
+</div>
+<a class="button" href="https://securitybyaps.com/request-a-free-quote/">Request a free quote</a>
+</div>
+</section>
+<div class="wrap source-note">This buyer-guide page is a demonstration concept based on Security by APS’s published remote video surveillance capabilities. Confirm product availability, service scope, pricing, and final claims before publishing as a live client page.</div>
+</main>
+</body>
+</html>
