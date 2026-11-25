@@ -87,6 +87,16 @@
     .button:hover { background: #e4f988; }
     .source-note { padding: 30px 0 44px; color: var(--muted); font-size: .85rem; }
     .source-note a { color: var(--blue); }
+    .comparison-shell { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--white); box-shadow: 0 10px 30px rgba(7,29,50,.05); }
+    .comparison-table { width: 100%; min-width: 780px; border-collapse: collapse; }
+    .comparison-table th, .comparison-table td { padding: 20px 22px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .comparison-table thead th { color: var(--white); background: var(--navy); font-family: 'Space Grotesk', Arial, sans-serif; font-size: 1.02rem; }
+    .comparison-table thead th:first-child { width: 21%; color: var(--aqua); }
+    .comparison-table tbody th { color: var(--navy); background: #f3f8fa; font-family: 'Space Grotesk', Arial, sans-serif; font-weight: 600; }
+    .comparison-table tbody td { color: var(--muted); }
+    .comparison-table tbody tr:nth-child(even) td { background: #fbfdfd; }
+    .comparison-table tbody tr:last-child th, .comparison-table tbody tr:last-child td { border-bottom: 0; }
+    .comparison-note { margin-top: 14px; color: var(--muted); font-size: .84rem; }
     @media (max-width: 780px) {
       .wrap { width: min(100% - 28px, 1160px); }
       .hero .wrap { padding: 56px 0 70px; }
@@ -148,6 +158,31 @@
 </div>
 </div>
 </section>
+<section class="overview">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Side-by-side comparison</span>
+<h2>Professional monitoring and self-monitoring at a glance.</h2>
+<p>Use this matrix as a starting point. The exact experience depends on the provider, equipment, monitoring plan, property, and response procedures.</p>
+</div>
+<div class="comparison-shell">
+<table class="comparison-table">
+<thead><tr><th scope="col">Decision factor</th><th scope="col">Professional monitoring</th><th scope="col">Self-monitoring</th></tr></thead>
+<tbody>
+<tr><th scope="row">Who watches?</th><td>A monitoring team is part of the response process according to the agreed plan.</td><td>An owner, manager, employee, or other designated contact watches notifications and events.</td></tr>
+<tr><th scope="row">Availability</th><td>Designed for continuous monitoring according to the selected service plan.</td><td>Depends on whether the responsible person is awake, available, connected, and able to respond.</td></tr>
+<tr><th scope="row">Alert review</th><td>May combine alarms, live video, AI-assisted detection, and operator review to help evaluate activity.</td><td>The recipient reviews the notification, checks available video or system information, and decides what it means.</td></tr>
+<tr><th scope="row">Response options</th><td>May include live audio, talk-down, dispatch, staff notification, or another documented response.</td><td>The recipient decides whether to contact a keyholder, staff member, emergency service, or another resource.</td></tr>
+<tr><th scope="row">Remote access</th><td>Many systems can still provide authorized owners or managers with live video, recorded events, and system access.</td><td>Remote access is central to the model because the owner or team reviews events directly.</td></tr>
+<tr><th scope="row">Operational workload</th><td>Reduces the amount of continuous alert-watching assigned to the property team, while still requiring a clear response plan.</td><td>Places more responsibility on the owner or team to notice, interpret, document, and respond to events.</td></tr>
+<tr><th scope="row">May fit when…</th><td>The property needs ongoing attention, has multiple locations, or cannot depend on one person receiving every alert.</td><td>The property is smaller or lower risk, the owner is usually available, and the team is comfortable managing alerts.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="comparison-note">Comparison content is educational. Confirm availability, response procedures, pricing, and contract terms with the provider.</p>
+</div>
+</section>
+
 <section>
 <div class="wrap">
 <div class="section-head">
